@@ -2,7 +2,7 @@
 
 This is a website I built in 2018 for a Scandinavian startup.
 
-Technologies used:
+## Technologies used:
 
 * HTML
 * CSS
