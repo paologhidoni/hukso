@@ -1,0 +1,71 @@
+/* BUTTONS COMPONENT */
+
+.btn
+  &, &:link, &:visited
+    text-decoration: none
+    padding: 15px 40px
+    display: inline-block
+    transition: all $transition-fast
+    position: relative
+
+  //change for the <button> element
+  border: none
+  cursor: pointer
+
+  &:hover
+    transform: translatey(-3px)
+
+  &:active,
+  &:focus
+    outline: none
+    translate: translatey(-1px)
+
+.btn-text
+  &:link,
+  &:visited
+    font-size: $font-size-h3
+    letter-spacing: -0.02rem
+    font-weight: 700
+    color: $font-color-primary
+    display: inline-block
+    text-decoration: none
+    border-bottom: 1px solid $font-color-primary
+    padding: 0.3rem
+    transition: all $transition-fast
+    cursor: pointer
+
+  &:hover
+    color: $color-primary
+    border-bottom: 1px solid $color-primary
+    transform: translateY(-0.2rem) scale(1)
+
+  &:active
+    transform: translateY(0) scale(1)
+
+  &--footer
+    &:link,
+    &:visited
+      font-size: $font-size-footer
+      display: block
+      border-bottom: none
+      padding: 0
+      font-weight: 400
+
+      @include respond(tab-land)
+        font-size: $font-size-footer-phone
+
+  &--cta
+    &:link,
+    &:visited
+      font-size: $font-size-h2
+      font-weight: 700
+      letter-spacing: 0rem
+      color: $color-white
+      border-bottom: 2px solid $color-white
+
+    &:hover
+      transform: translateY(-0.2rem) scale(1.05)
+
+    &:active
+      transform: translateY(0)
+

@@ -1,0 +1,123 @@
+/* CONTACT PAGE - PAGES */
+
+.contact-people
+	background-color: $color-primary-light
+	margin-top: 15rem
+
+	h4
+		color: $font-color-primary
+		margin-top: 4rem
+
+	@include respond(tab-land)
+		margin-top: 10rem
+
+	img
+		width: 100%
+
+	&__ted
+		filter: grayscale(100%) brightness(120%)
+
+.contact-people,
+.contact-details
+
+	.row
+
+		[class^="col-"]
+
+			@include respond(tab-land)
+				float: left !important
+				width: calc( ( 100% - #{$horizontal-gutter} ) / 2 ) !important
+				margin-bottom: 0
+
+			@include respond(phone)
+				float: none !important
+				width: 60% !important
+				margin-bottom: 8rem
+				margin-left: auto
+				margin-right: auto
+				text-align: center
+
+			@include (-ms-high-contrast: none), (-ms-high-contrast: active)
+				float: none !important
+				width: 60% !important
+				margin-bottom: 8rem
+				margin-left: auto
+				margin-right: auto
+				text-align: center
+
+.contact-details
+
+	&__menu
+
+		@include respond(phone)
+	    font-size: $font-size-default-phone
+
+	&__address
+		list-style-type: none
+
+	&__social-media
+		list-style-type: none
+
+		@include respond(phone)
+			display: flex
+			flex-flow: row
+			justify-content: space-around
+
+		@include (-ms-high-contrast: none), (-ms-high-contrast: active)
+			display: inline-block
+      margin-left: -110px
+
+	&__linkedin
+		background-image: url("../img/linkedin_logo.svg")
+		margin-bottom: 2rem
+
+		&::after
+			content: "LinkedIn"
+
+		&:hover
+			background-image: url("../img/linkedin_logo_light.svg")
+
+	&__instagram
+		background-image: url("../img/instagram_logo.svg")
+		margin-bottom: 2rem
+
+		&::after
+			content: "Instagram"
+
+		&:hover
+			background-image: url("../img/instagram_logo_light.svg")
+
+	&__facebook
+		background-image: url("../img/facebook_logo.svg")
+
+		&::after
+			content: "Facebook"
+
+		&:hover
+			background-image: url("../img/facebook_logo_light.svg")
+
+	&__linkedin,
+	&__instagram,
+	&__facebook
+
+		width: 4rem
+		height: 4rem
+		background-size: cover
+		transition: all $transition-fast
+		position: relative		
+
+		&::after
+			font-size: $font-size-default
+			display: block
+			position: absolute
+			top: 50%
+			left: 6rem
+			transform: translateY(-50%)
+
+			@include respond(phone)
+				content: ""
+
+.hukso_map
+	width: 100%
+	height: 50vh
+	border: 2px solid white

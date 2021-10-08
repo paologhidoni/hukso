@@ -1,0 +1,56 @@
+/* ROUND SECTION COMPONENT */
+
+.round-section
+	width: 100%
+	margin: 0 auto
+	text-align: center
+	position: relative
+
+	h3
+		font-weight: 700
+
+	&__shape
+		width: 18rem
+		height: 18rem
+		margin: 0 auto 3rem auto
+		-webkit-shape-outside: circle(50% at 50% 50%)
+		shape-outside: circle(50% at 50% 50%)
+		-webkit-clip-path: circle(50% at 50% 50%)
+		clip-path: circle(50% at 50% 50%)
+		position: relative
+		transition: all 0.2s
+
+	&__smile::after
+
+		content: ""
+		background-image: url("../img/hukso-smile.png")
+		background-size: 100%
+		background-repeat: no-repeat
+		display: inline-block
+		width: 85%
+		height: 10rem
+		position: absolute
+		z-index: 9000
+		top: 9rem
+		right: -55%
+
+		@include respond(tab-land)
+			display: none
+
+	&__img
+		height: 100%
+
+	// &__img--1 		// service 1
+	// 	transform: translate(-0.2rem, -6rem) scale(1.7)
+
+	// &__img--2 		// service 2
+	// 	transform: translate(-2rem, 0rem)
+
+	// &__img--3 		// service 3
+	// 	transform: translate(0rem, 0.5rem) scale(1.5)
+
+	// &__img--4 		// Ted
+	// 	transform: translate(0rem, 0rem) scale(1)
+
+	// &__img--5 		// Tiago
+	// 	transform: translate(0rem, 0rem) scale(1)

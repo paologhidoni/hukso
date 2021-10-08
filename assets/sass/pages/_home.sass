@@ -1,0 +1,66 @@
+/* HOME PAGE - PAGES */
+
+
+/* Index Services Section */
+.index-services
+	background-color: $color-secondary-light
+
+
+/* Index Benefits Section */
+.index-benefits
+	background-image: url("../img/index-benefits.jpg")
+	background-size: cover
+	background-position: left bottom
+	background-repeat: no-repeat
+
+	@include respond(tab-land)
+		background-size: 200%
+		background-position: left top
+
+	@include respond(lg-desk)
+		background-position: left bottom
+
+	.row
+		margin-bottom: 0
+
+		[class^="col-"].benefits-floated
+
+			@include respond(tab-land)
+				float: left !important
+				width: 50% !important
+
+			@include respond(phone)
+				float: none !important
+				width: 100% !important
+
+	.col-2-of-3,
+	.col-1-of-2
+
+		@include respond(tab-land)
+			margin-bottom: 0
+
+	.col-2-of-3
+		float: right
+
+	.col-1-of-2
+		padding-left: 4rem
+
+		@include respond(tab-land)
+			padding-left: 0
+
+
+			
+/* Index About Section */
+.index-about
+	background-color: $color-primary-light
+
+	.row, a
+		margin-bottom: 0
+
+	.member:hover
+
+		figure
+			transform: scale(1.02)
+
+		h4
+			text-decoration: underline !important

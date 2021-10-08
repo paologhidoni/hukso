@@ -1,0 +1,13 @@
+
+# Turn Rewrite Engine On 
+RewriteEngine on 
+
+# Rewrite for pretty URLS
+RewriteRule ^home$ 		index.html [NC,L]
+RewriteRule ^about$ 		about.html [NC,L]
+RewriteRule ^services$ 		services.html [NC,L]
+RewriteRule ^benefits$ 		benefits.html [NC,L]
+RewriteRule ^platform$ 		platform.html [NC,L]
+RewriteRule ^contact$ 		contact.html [NC,L]
+RewriteRule ^policies$ 		policies.html [NC,L]
+

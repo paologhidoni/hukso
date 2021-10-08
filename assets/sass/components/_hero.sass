@@ -1,0 +1,171 @@
+/* HERO COMPONENT */
+
+.hero
+	padding: 19rem 0 0 0
+	width: 100%
+	min-height: 100vh
+	background-size: cover
+	// background-size: 100% auto
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: column
+
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+		display: block
+
+	@include respond(tab-land)
+		min-height: 75vh
+
+		@media screen and (orientation:portrait)
+			min-height: 50vh
+
+	@include respond(phone)
+		padding: 16rem 0 0 0
+		min-height: 50vh
+
+	.row
+		margin-bottom: 0 !important
+
+		.col-2-of-4
+			margin-bottom: 0 !important
+
+
+	h1.heading-primary
+		animation: $transition-slow ease-in 0s normal 1 appear
+
+	a.btn-text
+		animation: $transition-very-slow ease-in 0s normal 1 appear
+
+	&__index
+		background-image: url("../img/index-hero.jpg")	
+		background-size: cover
+		background-position: center bottom
+
+		@include respond(phone)
+			background-image: url("../img/index-hero-min-small.jpg")
+
+	&__about
+
+		background-image: url("../img/about-hero.jpg")
+		background-position: center -760px
+
+		@media (-ms-high-contrast: none), (-ms-high-contrast: active)
+			background-position: center -900px
+
+		@include respond(tab-land)
+			background-position: center -470px
+
+		@include respond(tab-port)
+			background-position: center -280px
+
+		@include respond(phone)
+			background-position: center -60px
+			background-image: url("../img/about-hero-min-small.jpg")
+
+		@include respond(small-phone)
+			background-position: center -30px // -15px
+
+		@include respond(lg-desk)
+			background-position: center -1000px
+
+    @media (-ms-high-contrast: none), (-ms-high-contrast: active)
+      background-position: center -800px
+
+	&__services
+
+		background-size: cover
+		background-image: url("../img/services-hero.jpg")
+		background-position: center -400px // -300px -50px
+
+		@include respond(tab-land)
+			background-position: center -250px // -200px
+
+		@include respond(tab-port)
+			background-position: center -85px // -80px
+
+		@include respond(phone)
+			// background-image: url("../img/services-hero-mobile.jpg")
+			background-image: url("../img/services-hero-mobile-min-small.jpg")
+			background-position: center 70px					
+
+		@include respond(small-phone)
+			background-position: center 70px
+
+		@include respond(lg-desk)
+			background-position: center -600px // -450px
+
+    @media (-ms-high-contrast: none), (-ms-high-contrast: active)
+      background-position: center -350px
+
+	&__benefits
+		background-image: url("../img/benefits-hero.jpg") //benefits-hero2.jpg
+		background-position: center -700px
+
+		@include respond(tab-land)
+			background-position: center -400px
+
+		@include respond(tab-port)
+			background-position: center -200px
+
+		@include respond(phone)
+			// background-image: url("../img/benefits-hero-mobile.jpg")
+			background-image: url("../img/benefits-hero-mobile-min-small.jpg")
+			background-position: center 20px //-70
+
+			// @media screen and (-webkit-min-device-pixel-ratio:0)
+			// 	background-size: 100% 500%
+			// 	background-position: center -30px
+
+		@include respond(small-phone)
+			background-position: center 30px // FIXED
+
+		@include respond(lg-desk)
+			background-position: center -860px
+
+    @media (-ms-high-contrast: none), (-ms-high-contrast: active)
+      background-position: center -650px
+
+	&__platform
+		background-image: url("../img/platform-hero.jpg")
+		background-size: 100% auto
+		background-position: center -140px
+
+		@include respond(tab-land)
+			background-position: center -80px
+
+		@include respond(tab-port)
+			background-position: center -30px
+
+		@include respond(phone)
+			background-image: url("../img/platform-hero-min-small.jpg")
+			background-position: center 70px
+
+		// @include respond(small-phone)
+		// 	background-position: center 70px
+
+		@include respond(lg-desk)
+			background-position: center -200px
+
+    @media (-ms-high-contrast: none), (-ms-high-contrast: active)
+      background-position: center -200px
+
+	&__copy
+		padding-bottom: 4rem
+		flex: 1 1 50%
+
+	&__smile-box
+		margin-top: auto
+		width: 100%
+		display: flex
+		justify-content: center
+		flex: 1 1 50%
+		padding-bottom: 4rem
+
+	&__smile
+		width: 55%
+		align-self: flex-start
+		animation: $transition-slow ease-in 0s 1 appear
+
+		@include respond(small-phone)
+			width: 40%
+

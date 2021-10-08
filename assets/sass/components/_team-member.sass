@@ -1,0 +1,71 @@
+/* TEAM MEMBER COMPONENT */
+
+.team-member
+	width: 100%
+	position: relative
+	transition: all 0.2s
+
+	&__link:hover
+
+		transform: scale(1.01)
+
+		>  a h4.heading-quaternary
+			transform: scale(1.02)
+			text-decoration: underline !important
+
+	>  a h4.heading-quaternary
+		transition: all 0.2s
+		padding-left: 5rem
+
+	@include respond(tab-land)
+		width: 60%
+		margin: 0 auto 10rem auto
+
+	@include respond(phone)
+		width: 100%
+
+	&__id
+		width: 100%
+		display: table
+		margin-bottom: 3rem
+
+	&__shape
+		width: 18rem
+		height: 18rem
+		-webkit-shape-outside: circle(50% at 50% 50%)
+		shape-outside: circle(50% at 50% 50%)
+		-webkit-clip-path: circle(50% at 50% 50%)
+		clip-path: circle(50% at 50% 50%)
+		position: relative
+		transition: all 0.2s
+
+	&__img
+		height: 100%
+		filter: grayscale(100%)
+
+	// &__img--ted
+		// transform: translate(-7rem, 3rem) scale(1.5)
+		// filter: grayscale(100%) brightness(115%)
+
+	// &__img--tiago
+	// 	transform: translate(-6.5rem, 3rem) scale(1.4)
+	// 	filter: grayscale(100%) brightness(115%)
+
+	// &__img--jaro			// Jaro
+	// 	transform: translate(0rem, -0.2rem) scale(1.15)
+
+	// &__img--salvatore // Salvatore
+	// 	transform: translate(-4rem, 0rem) scale(1.01)
+
+	&__name
+		width: 100%
+		vertical-align: middle		
+		display: table-cell
+		text-align: left
+		padding-left: 4rem
+		text-decoration: none !important
+		color: $font-color-primary
+
+	&__story
+		color: $font-color-primary
+		text-decoration: none !important

@@ -1,0 +1,213 @@
+/* TYPOGRAPHY - BASE*/
+
+/* general typography */
+
+html
+  font-size: 62.5% // 1rem = 10px, 10/16 = 0.625 (62.5%) This defines what 1rem is at default viewport. 
+
+  @include respond(lg-desk)
+    font-size: 75% // 1rem = 12px, 12/16 = 0.75 (75%)
+
+  @include respond(tab-land)
+    font-size: 56.25% // 1rem = 9px, 9/16 = 0.5625 (56.25%)
+
+  @include respond(tab-port)
+    font-size: 50% // 1rem = 8px, 8/16 = 0.5 (50%)
+
+  @include respond(phone)
+    font-size: 43.75%   // 1rem = 7px, 7/16  =  0.4375 (43.75)
+
+body
+  font-family: $font-primary
+  font-weight: 400
+  line-height: 1.4
+  color: $font-color-primary
+  text-rendering: optimizeLegibility
+  // -moz-hyphens: auto
+  // -ms-hyphens: auto
+  // -webkit-hyphens: auto
+  // hyphens: auto
+  // letter-spacing: -0.01rem
+
+.heading-primary
+  font-size: $font-size-h1
+  font-weight: 500
+  margin-bottom: 3rem
+  // line-height: 1.3
+
+  @include respond(phone)
+    font-size: $font-size-h1-phone
+
+.heading-secondary
+  font-size: $font-size-h2
+  font-weight: 700
+
+.heading-tertiary
+  font-size: $font-size-h3
+  font-weight: 500
+
+.heading-quaternary
+  color: $color-primary
+  font-size: $font-size-default
+  font-weight: 500
+
+  @include respond(phone)
+    font-size: $font-size-default-phone
+
+.paragraph
+  font-size: $font-size-default
+
+  &:not(:last-child)
+    margin-bottom: 3rem
+
+  @include respond(phone)
+    font-size: $font-size-default-phone
+
+.slash
+  font-weight: 400
+  margin-left: 2px
+
+.ceo
+  display: block
+  font-weight: 700
+
+.semi-bold
+  font-weight: 500
+
+.text-bold
+  font-weight: 700
+
+
+
+/* index page typography */
+
+.index-services h4.heading-quaternary
+  @include respond(tab-land)
+    text-align: center
+
+.index-benefits
+
+  &__sign
+    font-size: 15rem
+    color: $color-primary
+    display: block
+    font-weight: 700
+    padding: 0
+    margin-left: -1rem
+
+  &__list-box
+
+    &--1,
+    &--2
+      padding-left: 2rem
+
+  &__list
+
+    list-style: none
+
+    li
+      padding-bottom: 0.5rem
+      font-weight: 700
+      text-indent: -2rem
+
+      &::before
+        content: "\2013 \00a0"
+        font-weight: 700
+        padding-right: 0.5rem
+
+  h4.heading-quaternary
+    font-weight: 700
+
+/* services page typography */
+
+.services-services h4.heading-quaternary
+  @include respond(tab-land)
+    text-align: center
+
+.corporate-stats-list
+  list-style: none
+  color: $color-primary
+  font-size: $font-size-default
+  font-weight: 500
+  letter-spacing: 0rem
+
+  @include respond(phone)
+    font-size: $font-size-default-phone
+
+
+/* about page typography */
+
+.about-team h2.heading-secondary
+
+  @include respond(tab-land)
+    margin-bottom: 8rem
+
+
+/* contact page typography */
+
+.contact-people,      
+.contact-details
+
+  a.hukso_email
+    font-size: $font-size-default
+    font-weight: 500
+
+    @include respond(phone)
+      font-size: $font-size-default-phone
+
+  .hukso_phone
+    margin-top: 0.4rem
+
+
+/* policies page typography */
+
+.policies-policies
+
+  h4.heading-quaternary
+    color: $font-color-primary
+    margin: 3rem 0
+    font-weight: 700
+
+  &__list
+    font-size: $font-size-default 
+    padding-left: 1.5rem
+
+    @include respond(phone)
+      font-size: $font-size-default-phone
+
+    li
+      margin-bottom: 0.4rem
+
+  &__sub-list
+    margin: 0.4rem 0
+    padding-left: 1.8rem
+
+
+
+
+/* call to action typography */
+
+.call-to-action
+
+  h3.heading-tertiary
+    font-weight: 700
+
+  @include respond(tab-land)
+    text-align: center
+
+
+
+/* footer typography */
+
+.footer
+
+  @include respond(tab-land)
+    text-align: center
+
+  .paragraph
+
+    font-size: $font-size-footer 
+
+    @include respond(tab-land)
+      font-size: $font-size-footer-phone
+    

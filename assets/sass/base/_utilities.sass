@@ -1,0 +1,59 @@
+/* utilities classes */
+
+
+/* typography */
+.u-text-center
+	text-align: center
+
+.u-text-inline
+  display: inline
+
+.u-text-regular
+	font-weight: 400
+
+.u-text-semi-bold
+	font-weight: 500
+
+.u-text-bold
+	font-weight: 700
+
+
+/* margins */
+.u-margin-top-small 
+	margin-top: 3rem
+.u-margin-top-big
+	margin-top: 8rem
+.u-margin-top-huge
+	margin-top: 10rem
+
+
+.u-margin-bottom-none
+	margin-bottom: 0 !important
+.u-margin-bottom-small
+	margin-bottom: 3rem
+.u-margin-bottom-medium
+	margin-bottom: 4rem
+.u-margin-bottom-big
+	margin-bottom: 6rem
+.u-margin-bottom-huge
+	margin-bottom: 8rem
+
+/* paddings */
+.u-section-padding
+	padding: 15rem 0
+
+	@include respond(phone)
+		padding: 10rem 0
+
+
+/* floats / clears */
+.clearfix
+	&::after
+		content: ""
+		display: table
+		clear: both
+
+.float-right
+	float: right !important
+
+
