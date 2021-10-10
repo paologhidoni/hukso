@@ -23,19 +23,19 @@ This is a website I built in 2018 for a Scandinavian startup.
 ## Website Screenshots
 <space><space>
 
-![A screenshot of this website on different devices](https://github.com/paologhidoni/hukso/blob/main/assets/img/hukso-case-study.jpg)
+![A screenshot of this website on different devices](assets/img/hukso-case-study.jpg)
 
 ### Laptop version
 
-![A screenshot of this website on a laptop](https://github.com/paologhidoni/hukso/blob/main/assets/img/hukso-laptop.png)
+![A screenshot of this website on a laptop](assets/img/hukso-laptop.png)
 
 ### Tablet version 
 
-![A screenshot of this website on a tablet](https://github.com/paologhidoni/hukso/blob/main/assets/img/hukso-tablet.png)
+![A screenshot of this website on a tablet](assets/img/hukso-tablet.png)
 
 ### Mobile version
 
-![A screenshot of this website on a mobile phone](https://github.com/paologhidoni/hukso/blob/main/assets/img/hukso-mobile.png)
+![A screenshot of this website on a mobile phone](assets/img/hukso-mobile.png)
 
 
 
